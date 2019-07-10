@@ -1,0 +1,12 @@
+<!--pages/auth/auth.wxml-->
+<!-- <text>pages/auth/auth.wxml</text> -->
+<view class="container">
+  <view class="user-info">
+      <open-data class="user-avatar" type="userAvatarUrl"></open-data>
+      <text>我们认识一下吧</text>
+  </view>
+  <view class="tip-text">
+    <text>请允许我们获取您的基本信息（昵称和头像），才能正常使用</text>
+  </view>
+  <button class="auth-button" open-type="getUserInfo" plain="{{true}}" bindgetuserinfo="onGetUserInfo">好的</button>
+</view>

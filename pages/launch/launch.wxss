@@ -1,0 +1,19 @@
+.container{
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tip{
+  font-size: 52rpx;
+  color: gray;
+  margin-left: 210rpx;
+
+}
+
+.tip2{
+  margin-left: 400rpx;
+  margin-top: 40rpx;
+  color: gainsboro
+}

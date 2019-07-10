@@ -1,0 +1,29 @@
+<!--pages/my-detail/my-detail.wxml-->
+
+<view class="container">
+        <image src="{{userInfo.userLogo}}" class="avatar"></image> 
+        <!-- <view class="content">
+                <text>昵称：</text>
+                <input value="" maxlength="20" placeholder="请输入昵称" placeholder-class="placeholder-style"></input>
+        </view> -->
+        <view class="content">
+                <text>性别：</text>
+                <radio-group class="radio-group" bindchange="radioChange">
+                        <label class="radio">
+                                <radio value="1" checked="{{sex == 1? true :false}}"  color="#fff" /><view>男</view>
+                        </label>
+                        <label class="radio">
+                                <radio value="2" checked="{{sex != 1? true :false}}" color="#fff" /><view>女</view>
+                        </label>
+                </radio-group>
+        </view>
+        <view class="content">
+                <text>生日：</text>
+                <picker mode="date" value="{{birthDay}}" start="2001-01-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="picker">
+                                {{birthDay}}
+                        </view>
+                </picker>
+        </view>
+         <button class="submit-button"  plain="true" bindtap="onSubmit">提交</button>
+</view>

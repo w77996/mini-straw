@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="tip"  animation="{{animationTip}}">世界因你而美</text>
+  <text class="tip2" animation="{{animationTip2}}">---稻草人图床工具</text>
+</view>

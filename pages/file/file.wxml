@@ -1,0 +1,22 @@
+<!--pages/tv/tv.wxml-->
+<!-- <text>pages/tv/tv.wxml</text> -->
+<view wx:if="{{!searchPage}}" class="container">
+  <view class="header">
+    <view class="box" bind:tap="onSearchTap">
+      <image src="/images/icon/search.png"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+  <view class="sub-container">
+    <view wx:if="{{fileList}}">
+      <block wx:for="{{fileList}}" wx:key="{{item.id}}" file="{{item}}">
+        <file-cmp file="{{item}}" bind:del="onDelete" bind:showImage="showImage"></file-cmp>
+        <view class="line"></view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<search-cmp more="{{more}}" wx:if="{{searchPage}}" bind:cancel="onCancel"></search-cmp>
+
+<image src="images/add-fill.png" class="add_img" bindtap="onUpload" animation="{{animationBtn}}"></image>

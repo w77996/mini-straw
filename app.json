@@ -1,0 +1,44 @@
+{
+        "pages": [
+                "pages/launch/launch",
+                "pages/auth/auth",
+                "pages/index/index",
+                "pages/my/my",
+                "pages/file/file",
+                "pages/about/about",
+                "pages/my-detail/my-detail"
+        ],
+        "window": {
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#fff",
+                "navigationBarTitleText": "稻草人",
+                "navigationBarTextStyle": "black"
+        },
+        "tabBar": {
+                "borderStyle": "black",
+                "selectedColor": "#000000",
+                "backgroundColor": "#ffffff",
+                "color": "#c7c7c7",
+                "list": [
+                        {
+                                "selectedIconPath": "/images/tab/index@highlight.png",
+                                "pagePath": "pages/index/index",
+                                "text": "主页",
+                                "iconPath": "/images/tab/index.png"
+                        },
+                        {
+                                "selectedIconPath": "/images/tab/tv@highlight.png",
+                                "pagePath": "pages/file/file",
+                                "text": "文件",
+                                "iconPath": "/images/tab/tv.png"
+                        },
+                        {
+                                "selectedIconPath": "/images/tab/my@highlight.png",
+                                "pagePath": "pages/my/my",
+                                "text": "我的",
+                                "iconPath": "/images/tab/my.png"
+                        }
+                ]
+        },
+        "sitemapLocation": "sitemap.json"
+}

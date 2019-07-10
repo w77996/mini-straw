@@ -1,0 +1,100 @@
+/* pages/my-detail/my-detail.wxss */
+
+.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150rpx;
+}
+
+.content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 550rpx;
+        height: 100rpx;
+}
+
+.avatar {
+        width: 128rpx;
+        height: 128rpx;
+        margin: 20rpx;
+        margin-bottom: 100rpx;
+        border-radius: 50%;
+}
+
+.content text {
+        display: block;
+        padding-left: 10rpx;
+        padding-bottom: 5rpx;
+}
+
+.content input {
+        width: 350rpx;
+        border-bottom: 1rpx grey solid;
+}
+
+.placeholder-style {
+        color: #e5e5e5;
+        font-size: 24rpx;
+        padding-left: 10rpx;
+}
+
+.content picker {
+        width: 350rpx;
+        margin-left: 10rpx;
+        padding-left: 10rpx;
+        padding-bottom: 5rpx;
+        border-bottom: 1rpx grey solid;
+}
+
+.content radio-group {
+        display: flex;
+        align-items: center;
+        width: 350rpx;
+        border-bottom: 1rpx grey solid;
+}
+
+.content radio-group label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 175rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+        border-radius: 50%;
+        width: 12rpx;
+        height: 12rpx;
+        text-align: center;
+        font-size: 0rpx; /* 对勾大小 去掉 */
+        background-color: #e5e5e5;
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+radio {
+        border-radius: 50%;
+        width: 30rpx; /* 最好是4的倍数，不然会不在中间 */
+        height: 30rpx;
+        border: 2rpx solid gainsboro; /* 设置边框（外圆） */
+        font-size: 0; /* 让边框重合 */
+        margin: 8rpx;
+}
+
+radio .wx-radio-input {
+        border-radius: 50%;
+        width: 30rpx;
+        height: 30rpx;
+        border: none; /* 替换边框（隐藏原有边框） */
+}
+
+.submit-button{
+        width: 350rpx;
+        margin-top: 200rpx;
+        height: 80rpx;
+        text-align: center;
+        font-size: 32rpx;
+}

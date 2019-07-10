@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 用户顶部view */
+
+.userinfo {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 用户头像 */
+
+.userinfo-avatar {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+
+/* 用户名 */
+
+.userinfo-username {
+  font: 24rpx;
+  color: rgba(139, 137, 137, 0.6);
+  margin-top: 18rpx;
+}
+
+/* 用户文件信息view */
+
+.userinfo-file {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 用户文件信息item */
+
+.userinfo-file-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* 用户文件信息数量 */
+
+.userinfo-file-text {
+  font-size: 48rpx;
+}
+
+/* 用户文件信息描述 */
+
+.userinfo-file-text-desc {
+  font-size: 24rpx;
+  color: #9999;
+}
+
+/* 竖线 */
+
+.vertical-line {
+  margin-right: 7px;
+  height: 40px;
+  border-left: 2px solid #f5f5f5;
+}
+
+/* 横线 */
+
+.horizon-line {
+  border-top: 2px solid #f5f5f5;
+  width: 100%;
+}
+
+.backgroup-view {
+  height: 10rpx;
+  background-color:  #f5f5f5;
+}
+
+.item-line{
+ border-top: 1px solid #f5f5f5;
+  margin-left: 80rpx;
+}
+/* 关于view */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 360rpx;
+}
+
+/* 关于item */
+
+.about-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 80rpx;
+  margin-left: 20rpx;
+}
+
+/* 关于item中的图片 */
+
+.about-item image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+/* 关于item中的文字 */
+
+.about-item text {
+  font: 24rpx;
+  margin-left: 30rpx;
+  line-height: 32rpx;
+}
+
+.about-btn {
+       width: 100%;
+        background: red;
+    padding: 0 !important;
+    border:none !important;
+     font-size: 32rpx;
+     line-height: 32rpx;
+      text-align: left;
+}
+
+.about-btn-text {
+ border: none;
+ text-align: left;
+ font: 24rpx;
+
+}
+
+.share-btn {
+    margin-top: 28rpx;
+    margin-left: 10rpx;
+}
+
+.share {
+    /* padding:10rpx; */
+    width: 40rpx;
+    height: 40rpx;
+}
+/* 反馈与建议的样式 */

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tag-cmp": "../tag/index",
+    "file-cmp": "/component/file/index"
+  }
+}

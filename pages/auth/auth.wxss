@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 1200rpx;
+  width: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.user-info text{
+  font-size: 42rpx;
+}
+
+.tip-text {
+  display: flex;
+  font-size: 26rpx;
+  color: gray;
+}
+
+.auth-button{
+  width: 300rpx;
+  border:1px solid yellow
+}

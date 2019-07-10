@@ -1,0 +1,105 @@
+/* component/search/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  height: 100rpx;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  align-items: center;
+  z-index: 99;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  margin-left: 20rpx;
+}
+
+.icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 20rpx;
+}
+
+.icon-cancel {
+  width: 14px;
+  height: 14px;
+}
+
+.bar {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: inline-block;
+  height: 34px;
+  width: 500rpx;
+  font-size: 14px;
+}
+
+.cancel {
+  line-height: 34px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+}
+
+.history {
+  width: 690rpx;
+  margin: 40rpx 0 20rpx 0;
+  display: flex;
+  font-size: 14px;
+  margin-top: 160rpx;
+  flex-direction: column;
+}
+
+.title {
+  line-height: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-left:100px; */
+}
+
+.chunk {
+  height: 15px;
+  width: 5px;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 24rpx;
+  padding-left: 15px;
+  width: 630rpx;
+}
+
+.tags tag-cmp {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.search-list {
+  margin-top: 100rpx;
+  width: 100%;
+ 
+}

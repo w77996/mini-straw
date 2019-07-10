@@ -1,0 +1,25 @@
+<view class="container" bindlongtap="onShowMenu" bindtap="onTouch">
+  <view class="img-view">
+    <image class="img" mode="aspectFill" src="{{file.filePath}}"></image>
+  </view>
+
+  <view class="info">
+    <view class="info-item-desc">
+      <text class="info-item-desc-name">文件名:</text>
+      <text class="info-item-desc-value">{{file.fileName}}</text>
+    </view>
+    <view class="info-item-desc">
+      <text class="info-item-desc-name">文件大小:</text>
+      <text class="info-item-desc-value">{{fileSize}}</text>
+    </view>
+    <view class="info-item-desc">
+      <text class="info-item-desc-name">上传时间:</text>
+      <text class="info-item-desc-value">{{fileCreatTime}}</text>
+    </view>
+    <view class="tool-menu">
+      <image src="images/del.png" class="tool-menu-img" catchtap="onDelete"></image>
+      <image src="images/copy.png" class="tool-menu-img" catchtap="onCopy"></image>
+    </view>
+  </view>
+
+</view>

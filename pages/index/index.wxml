@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="add-view">
+    <btn-cmp class="add-btn" bind:tap="onUpload">
+      <image slot="img" class="add" src="images/add.png" />
+    </btn-cmp>
+    <text>上传图片</text>
+  </view>
+</view>

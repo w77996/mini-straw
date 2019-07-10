@@ -1,0 +1,28 @@
+/* pages/about/about.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 1000rpx;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about text{
+  text-align: center;
+  font-size: 24rpx;
+}
+.horizon-line {
+  border-top: 2px solid #f5f5f5;
+  width: 100%;
+}
+
+.about image{
+  margin-top: 50rpx;
+  width: 240rpx;
+  height: 240rpx;
+}

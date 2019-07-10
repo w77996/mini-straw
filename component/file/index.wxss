@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  height: 200rpx;
+  width: 100%;
+  margin: 10rpx 15rpx 15rpx 10rpx;
+  border-radius: 3%;
+}
+
+/* 图片 */
+
+.img {
+  width: 340rpx;
+  height: 200rpx;
+  overflow: hidden;
+}
+
+/* 右侧info */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  overflow: hidden;
+  margin: 0rpx 15rpx 0rpx 15rpx;
+}
+
+/* 右侧item */
+
+.info-item-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+/* 右侧info名称 */
+
+.info-item-desc-name {
+  font-size: 28rpx;
+  white-space: nowrap;
+}
+
+/* 右侧info数据 */
+
+.info-item-desc-value {
+  overflow: hidden;
+  font-size: 24rpx;
+  white-space: nowrap;
+  color: grey;
+  text-overflow: ellipsis;
+  margin-left: 10rpx;
+}
+
+/* 右侧菜单 */
+
+.tool-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: right;
+  margin-top: 15rpx;
+  height: 50rpx;
+  width: 100%;
+}
+
+/* 右侧菜单图片 */
+
+.tool-menu-img {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+
+/* .tool-menu btn-cmp {
+  width: 32rpx;
+  height: 32rpx;
+
+} */

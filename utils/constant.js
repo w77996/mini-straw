@@ -1,0 +1,3 @@
+const constant = {
+  hasAuth:false
+}

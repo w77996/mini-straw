@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-button": "/component/image-button/index"
+  },
+  "enablePullDownRefresh": true
+}

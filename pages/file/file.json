@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "file-cmp": "/component/file/index",
+    "search-cmp": "/component/search/index"
+  },
+  "enablePullDownRefresh": true
+}

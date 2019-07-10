@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="about">
+    <text>关注公众号"稻草人平台"，好文章及后续更新都将会实时推送，第二个项目也在规划当中了，如果有好的想法或者好的需求，可以一起来分享。</text>
+    <image src="{{gongzong}}" bindtap="onGongzong"/>
+  </view>
+  <view class="horizon-line"></view>
+  <view class="about">
+    <text>购买源码及文档，备注邮箱，获得获取方式</text>
+    <image src="{{pay}}" bindtap="onPay"/>
+  </view>
+</view>

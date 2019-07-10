@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 顶部显示用户头像及名称view -->
+  <view class="userinfo" bindtap="onUserDetail">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-username">{{userInfo.nickName}}</text>
+  </view>
+  <!-- 填充色 -->
+  <view class="backgroup-view"></view>
+  <!-- 用户文件信息view -->
+  <view class="userinfo-file">
+    <view class="userinfo-file-item">
+      <text class="userinfo-file-text">{{userFileInfo.totalSize}}</text>
+      <text class="userinfo-file-text-desc">总空间</text>
+    </view>
+    <view class="vertical-line"></view>
+    <view class="userinfo-file-item">
+      <text class="userinfo-file-text">{{userFileInfo.leftSize}}</text>
+      <text class="userinfo-file-text-desc">剩余空间</text>
+    </view>
+    <view class="vertical-line"></view>
+    <view class=" userinfo-file-item">
+      <text class="userinfo-file-text">{{userFileInfo.fileNum}}</text>
+      <text class="userinfo-file-text-desc">文件数</text>
+    </view>
+  </view>
+  <!-- 填充色 -->
+  <view class="backgroup-view"></view>
+  <!-- 关于 -->
+  <view class="about" style="margin-top:40rpx;">
+     <view class="about-item">
+      <image src="images/vip.png" />
+      <button class="about-btn" plain="true" open-type="share">
+        <text class="about-btn-text">推荐一下</text>
+      </button>
+    </view>
+    <view class="item-line" />
+    <view class="about-item">
+      <image src="images/feedback.png" />
+      <button class="about-btn" plain="true" open-type="feedback">
+        <text class="about-btn-text">反馈建议</text>
+      </button>
+    </view>
+    <view class="item-line" />
+    <view class="about-item">
+      <image src="images/contact.png" />
+      <button class="about-btn" plain="true" open-type="contact" bindcontact="handleContact">
+        <text class="about-btn-text">联系客服</text>
+      </button>
+    </view>
+    <view class="item-line" />
+    <view class="about-item" bindtap="onAbout">
+      <image src="images/about.png"></image>
+      <text>关于</text>
+    </view>
+    <view class="item-line" />
+  </view>
+</view>

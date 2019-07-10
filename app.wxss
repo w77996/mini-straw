@@ -1,0 +1,12 @@
+/* page {
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+} */
+page{
+  font-family: "PMingLiU";
+  font-size: 32rpx;
+}

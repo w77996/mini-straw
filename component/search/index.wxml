@@ -1,0 +1,30 @@
+<!--component/search/index.wxml-->
+<!-- <text>component/search/index.wxml</text> -->
+<view class="container">
+  <view class="header">
+    <view class="search-container">
+      <image src="/images/icon/search.png" class="icon"></image>
+      <input placeholder-class="in-bar" placeholder="名称" class="bar" bind:confirm="onConfirm" value="{{searchValue}}" auto-focus="true" />
+      <image bind:tap="onDelete" class="icon-cancel" src="images/cancel.png" />
+    </view>
+    <view class="cancel" bind:tap="onCancel">取消</view>
+  </view>
+  <view wx:if="{{!searchPage}}" class="history">
+    <view class="title">
+      <view class="chunk"></view>
+      <text>历史搜索</text>
+    </view>
+    <view class="tags">
+      <block wx:for="{{historyWords}}" wx:key="">
+        <tag-cmp bind:tapping="onConfirm" text="{{item}}" />
+      </block>
+    </view>
+  </view>
+  <view wx:if="{{searchPage}}" class="search-list">
+    <block wx:for="{{fileList}}" wx:key="{{item.id}}" file="{{item}}">
+      <file-cmp file="{{item}}"></file-cmp>
+      <view class="line"></view>
+    </block>
+
+  </view>
+</view>
